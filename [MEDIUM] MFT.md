@@ -11,11 +11,11 @@ From the description I knew that we need to parse this MFT file, we know that we
 | `MFTECmd` | [0.5.1.0](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip) |  $MFT, $Boot, $J, $SDS, and $LogFile (coming soon) parser. Handles locked files |
 | `MFTExplorer` | [1.4.0.0](https://f001.backblazeb2.com/file/EricZimmermanTools/MFTExplorer.zip) |  Graphical $MFT viewer |
  
- AboutDFIR (https://aboutdfir.com/toolsandartifacts/windows/mft-explorer-mftecmd/) has great turotial which may help us to find the flag for current challenge
+ AboutDFIR (https://aboutdfir.com/toolsandartifacts/windows/mft-explorer-mftecmd/) published great turotial which may help us to find the flag for current challenge
  
 ## Lets Start With MTFCmd 
 _
-Let's look at switch options avaiable with MFTCmd.exe 
+Let's examine switch options avaiable with MFTCmd.exe 
 
 MFTECmd version 0.5.0.1
 
@@ -57,24 +57,24 @@ https://github.com/EricZimmerman/MFTECmd
 > -f inputfile to be pasrsed.
 > --csv, --cvsf for outfile which is been parsed.
 
-Lets Parse the file using MTFCmd.exe
+Lets Parse the file using MTFCmd.exe and produce csv file.
 
 >  **.\MFTECmd.exe -f .\MFT --csv .\ --cvsf mft_out.csv**
 
 ![](images/MFTEvtxCmdCSV.PNG)
 
-since challenge looking for an excel file so I searched the output csv for **.xlsx**, the excel files extension.  
+Since challenge about finding suspicious excel file so I searched the output csv file for **.xlsx** (the excel files extension).  
 
-I have searched for XLSX usng Strings ( sysInternals )
+I have searched for string 'XLSX usng Strings ( sysInternals )
 
 >  **PS D:\CTF!\cybertalents\mft> strings.exe '.\20210520152519_MFTECmd_$MFT_Output.csv' | findstr xlsx**
 >  
 ![](images/MTFStringsXLSX.PNG)
 
-I found a file with a base64-encoded name.
+I found an xlsx file with a base64-encoded name.
 
 ![](images/MTFStringsXLSX1.PNG)
 
-I decoded it and got the flag usng [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)&input=Wm14aFozdFpiM1ZmVG1WbFpGOVViMTlRWVhKelpWOU5SbFI5). 
+I decided to decoded with [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)&input=Wm14aFozdFpiM1ZmVG1WbFpGOVViMTlRWVhKelpWOU5SbFI5). 
 
 ![](images/MTFStringsXLSXCC.PNG)
