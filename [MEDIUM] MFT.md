@@ -15,7 +15,7 @@ From the description I knew that we need to parse this MFT file, we know that we
  
 ## Lets Start With MTFCmd 
 _
-Let look at switch options avaiable with MFTCmd.exe 
+Let's look at switch options avaiable with MFTCmd.exe 
 
 MFTECmd version 0.5.0.1
 
