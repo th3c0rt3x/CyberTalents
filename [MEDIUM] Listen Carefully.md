@@ -13,3 +13,10 @@ When I look at the JPG file I thought it may relate to steg or soemthing as usua
 -  File type   :heavy_check_mark:
 -  Checks for Stego   :heavy_check_mark: 
    * No sucess with various stego tools
+
+After having little brain strom with the file attached to challenge, got something in my mind that the challenge name starts with Listen but here we have .jpg.
+
+Did something hidden inside the image  :question: 
+
+Lets see what inside the JPG with Strings, HexDump or HexEditor (010Editor).
+
