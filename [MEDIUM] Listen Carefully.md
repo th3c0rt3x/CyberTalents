@@ -5,7 +5,7 @@
 
 > A wanted hacker knew he was going to get arrested, he wanted to save a secret before he was arrested.The police tech team found that this image was the last accessed file. Please help the police find the evidence.
 
-c
+![](images/Listencarefully.jpg)  
 
 When I look at the JPG file I thought it may relate to steg or soemthing as usual I was trying to check couple of things about file:
 
@@ -38,8 +38,7 @@ when I strated playing extracted WAv file using VLC Media player I hear distrubi
   
 When I Import Exported WAV file to speak it will get docoded frequencies as images, Thats your flag.
   
-Note: If you can't see well you can use [Sonic Visualiser](https://sonicvisualiser.org/) for a better analysis
-
-  ![image](images/LC_WAV.PNG)
+Note: If you can't see well you can use [Sonic Visualiser](https://sonicvisualiser.org/) for a better analysis.
+  ![](images/LC_WAV.PNG)
   
   
