@@ -37,8 +37,8 @@ from there lets copy HEX data and dump to new file and save as <filename>.wav.
 when I strated playing extracted WAv file using VLC Media player I hear distrubing noise, so thought of anyalysnig frequencies with speak.
   
 When I Import Exported WAV file to speak it will get docoded frequencies as images, Thats your flag.
-  
-Note: If you can't see well you can use [Sonic Visualiser](https://sonicvisualiser.org/) for a better analysis.
-  ![](images/LC_WAV.png)
-  
+![](images/LC_WAV.png)
+
+  >Note: If you can't see well you can use [Sonic Visualiser](https://sonicvisualiser.org/) for a better analysis.
+
   
