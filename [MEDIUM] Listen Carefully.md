@@ -40,5 +40,6 @@ When I Import Exported WAV file to speak it will get docoded frequencies as imag
 ![](images/LC_WAV.png)
 
   >Note: If you can't see well you can use [Sonic Visualiser](https://sonicvisualiser.org/) for a better analysis.
-
+  
+>![](images/LC_SONIC.PNG)
   
