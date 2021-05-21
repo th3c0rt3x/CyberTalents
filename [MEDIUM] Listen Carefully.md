@@ -36,7 +36,7 @@ and I decided to find the Magic String for WAV **52 49 46 46 ?? ?? ?? ?? 57 41 5
 from there lets copy HEX data and dump to new file and save as <filename>.wav. 
 when I strated playing extracted WAv file using VLC Media player I hear distrubing noise, so thought of anyalysnig frequencies with speak.
   
-When I Import Exported WAV file to speak it will get docoded frequencies as images, Thats your flag.
+When I Import Exported WAV file to [speak](http://spek.cc/) it will get docoded frequencies as images, Thats your flag.
 ![](images/LC_WAV.png)
 
   >Note: If you can't see well you can use [Sonic Visualiser](https://sonicvisualiser.org/) for a better analysis.
