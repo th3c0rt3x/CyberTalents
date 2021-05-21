@@ -21,7 +21,7 @@ Did something hidden inside the image  :question:
 
 Lets see what's inside the JPG with Strings, HexDump or any HexEditor (010Editor).
 
-Since string can examine the file and displays huge unknow strings, thought of grep/findstr with string **WAV** OR **WAVE** 
+Since strings can examine the file and displays huge unknow data lets concentrate on what we require, thought of grep/findstr with string **WAV** OR **WAVE** 
 
 ![](images/LC_Strings_WAV.PNG)  
 
@@ -33,10 +33,10 @@ and I decided to find the Magic String for WAV **52 49 46 46 ?? ?? ?? ?? 57 41 5
 
 ![image](images/LC_010_Find_WAV.PNG)
 
-from there lets copy HEX data and dump to new file and save as <filename>.wav. 
-when I strated playing extracted WAv file using VLC Media player I hear distrubing noise, so thought of anyalysnig frequencies with speak.
+from there to EOF, lets copy HEX data and dump to new file and save as <filename>.wav. 
+when I strated playing extracted WAv file using VLC Media player I hear distrubing noise, so thought of anyalysnig frequencies with [speak](http://spek.cc/).
   
-When I Import Exported WAV file to [speak](http://spek.cc/) it will get docoded frequencies as images, Thats your flag.
+When I Imported extracted WAV file to [speak](http://spek.cc/) it will get docoded frequencies as images, Thats your flag.
 ![](images/LC_WAV.png)
 
   >Note: If you can't see well you can use [Sonic Visualiser](https://sonicvisualiser.org/) for a better analysis.
